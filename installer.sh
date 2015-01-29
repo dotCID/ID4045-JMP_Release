@@ -5,7 +5,7 @@ apt-get update
 apt-get install ekiga g++ libgtk2.0-dev build-essential git pkg-config arduino arduino-core -y
 
 git clone https://github.com/dotcid/ID4045-JMP_Release
-cd Complete-Code/Interface
+cd ID4045-JMP_Release/Interface
 chmod a+x ./interfaceInstaller.sh
 ./interfaceInstaller.sh
 

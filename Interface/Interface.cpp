@@ -26,7 +26,7 @@ bool done = false;
 char posReturn[256];
 bool positionCheck = false;  // this polls the server for current position
 
-const char* cdet[3][2] = {{"145.94.150.144", "Server address"}, // this is the IP of our test pc on the TUDelft network
+const char* cdet[3][2] = {{"localhost", "Server address"}, // default to local use
 						  {"4547", "Server port"}};
 
 		  

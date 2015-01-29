@@ -1,4 +1,9 @@
 #!/bin/bash
+# from http://www.cyberciti.biz/tips/shell-root-user-check-script.html:
+if [[ $EUID -ne 0 ]]; then
+   echo "This script must be run as root" 1>&2
+   exit 1
+fi
 
 add-apt-repository universe
 apt-get update

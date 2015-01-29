@@ -17,4 +17,4 @@ cd ../Arduino
 mkdir ~/sketchbook
 mkdir ~/sketchbook/libraries
 cp PAK_Arduino_Code.ino ~/sketchbook/
-cp ./libraries/* ~/sketchbook/libraries
+cp -r ./libraries/* ~/sketchbook/libraries

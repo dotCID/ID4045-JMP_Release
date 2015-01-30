@@ -1,4 +1,4 @@
-/* Arduino Code for JMP, version 0.1
+/* Arduino Code for JMP, version 1.0
    Motor controller class
    @author Marien Wolthuis
    date created 16/1/2015			*/

@@ -22,7 +22,6 @@ public:
 	void setLocation(float location);
 	float getLocation();
 	
-	// for testing
 	int discarded;
 	
 private:

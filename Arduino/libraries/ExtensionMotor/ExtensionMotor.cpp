@@ -1,7 +1,7 @@
-/* Arduino Code for JMP, version 0.1
+/* Arduino Code for JMP, version 1.0
    Motor controller class
    @author Marien Wolthuis
-   date created 16/1/2015			*/
+   date created 20/1/2015			*/
  
 #include <Arduino.h>
 #include <ExtensionMotor.h>
@@ -24,7 +24,7 @@ ExtensionMotor::ExtensionMotor(int fwd, int rev, int dis){
 bool ExtensionMotor::run(int direction){
 	_direction = direction==1?1:-1;
 	if(_direction == 1){
-		for(int i=0;i<2;i++)				// for testing purposes, use all three parts of the array
+		for(int i=0;i<2;i++)
 			digitalWrite(_pins[i],_fwd[i]);
 		analogWrite(_pins[2],_speed);
 	}else{

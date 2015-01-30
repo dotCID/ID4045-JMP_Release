@@ -15,22 +15,15 @@ RotationSensor::RotationSensor(int pin){
 }
 
 float RotationSensor::read(){
+	// shift indices rather than data to lower computation time
 	_t_0 = _t_0==2?0:_t_0+1;		// reading(t)
 	_t_1 = _t_0==0?2:_t_0-1;		// reading(t-1)
 	_t_2 = _t_0==1?2:_t_0==0?1:0;	// reading(t-2)
 
 	_readings[_t_0] = (analogRead(_pin)-1023) * _multiplier; // rad
 	_readTimes[_t_0] = millis();
-
-//	Serial.print("t-2 ");Serial.println(_readings[_t_2]*100);
-//	Serial.print("t-1 ");Serial.println(_readings[_t_1]*100);
-//	Serial.print("t   ");Serial.println(_readings[_t_0]*100);
 	
 	_speed = (_readings[_t_2] - 4*_readings[_t_1] + 3*_readings[_t_0])/(2 * (_readTimes[_t_0] - _readTimes[_t_2]) / 2);
-	
-//	Serial.print("pot ");Serial.println(analogRead(_pin));
-//	Serial.print("spd ");Serial.println(_speed*10000.0);
-//	Serial.println();
 	
 	return _speed;
 }

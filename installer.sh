@@ -20,6 +20,7 @@ chmod a+x ./serverInstaller.sh
 
 cd ../Arduino
 mkdir ~/sketchbook
+mkdir ~/sketchbook/PAK_Arduino_Code
 mkdir ~/sketchbook/libraries
-cp PAK_Arduino_Code.ino ~/sketchbook/
+cp PAK_Arduino_Code.ino ~/sketchbook/PAK_Arduino_Code
 cp -r ./libraries/* ~/sketchbook/libraries

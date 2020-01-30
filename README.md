@@ -1,11 +1,11 @@
 # ID4045-JMP_Release
 The complete release code for the JMP project of team PAK, including installation scripts
 
-###Software installation instructions for the PAK JMP project prototype
+# Software installation instructions for the PAK JMP project prototype
 
 The software for this prototype contains of three parts: the server code, the interface code, and the Arduino code. This software runs on Ubuntu Linux (and probably will on all Debian-based operating systems) 14.04.1 LTS, of which a “live CD” is provided. Please note that this system loses all data upon reboot. The Arduino code requires the latest version of the Arduino compiler. In case the installed version does not work, please download the latest version from the Arduino website. The code provided is already installed on the Arduino that is in the prototype; it does not need updating.
 
-###Installation
+## Installation
 
 Please open a terminal window and enter the following three commands:
 ```
